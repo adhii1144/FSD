@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Events</title>
+    <script>
+        function focus(){
+            document.getElementById('key').style.backgroundColor="red";
+        }
+        function blur(){
+            document.getElementsByClassName("keyboard").style.backgroundColor("blue");
+        }
+    </script>
+</head>
+<body>
+    <form >
+        Name : <input type="text" id="key" onfocus="focus()"><br><br>
+        password : <input type="password" class="keyboard" onblur="blur()"><br><br>
+        email : <input type="email" class="keyboard" onchange="change()" value="Hello"><br><br>
+    </form>
+  
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Board Events</title>
+    <script>
+        function keyup(){
+            alert("on Key Up Event");
+        }
+        function keydown(){
+            alert("On key Down Event");
+        }
+        function keypress(){
+            alert("On key Press Event");
+        }
+    </script>
+    <style>
+        .keyboard{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    Name : <input type="text" class="keyboard" onkeyup="keyup()"><br><br>
+    password : <input type="password" class="keyboard" onkeydown="keydown()"><br><br>
+    email : <input type="email" class="keyboard" onkeypress="keypress()"><br><br>
+</body>
+</html>

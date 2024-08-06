@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <script>
+        function click(){
+            alert("this is on click event");
+        }
+        function mouseOver(){
+            alert("On mouse over Event");
+        }
+        function mouseOut(){
+            alert("this ia an mouse out event");
+        }
+        function mouseenter(){
+            alert("this is a mouse enter event");
+        }
+        function mousedown(){
+            alert("this is an mouse down event");
+        }
+        function mouseUp(){
+            alert("This is a mouse Up event");
+        }
+        function mouseout(){
+            alert("On Mouse Out Event");
+        }
+        function mouseleave(){
+            alert("On mouse Leave Event");
+        }
+    </script>
+    <style>
+        button{
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <input type="submit" onclick="click()" value="Mouse enter"><br><br>
+    <input type="submit" onmouseover="mouseenter()" value="Mouse Over"><br><br>
+    <input type="submit" onmousedown="mousedown()" value="Mouse Down"><br><br>
+    <input type="submit" onmouseup="mouseUp()" value="Mouse Up"><br><br>
+    <input type="submit" onmouseout="mouseout()" value="Mouse Out"><br><br>
+    <input type="submit" onmouseleave="mouseleave()" value="Mouse Leave"><br><br>
+</body>
+</html>

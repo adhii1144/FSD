@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Mouse Events</title>
+    <script src="jquery.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("p").click(function(){  //single click
+                    $(this).hide();
+                    $("h1").dblclick(function(){  //double click
+                        $(this).hide();
+                    });
+                });
+                $(document).ready(function(){
+                    $("h2").mouseenter(function(){
+                            alert("This is an mouse enter Method")
+                    });
+                    $("h3").mousedown(function(){
+                            alert("This is an mouse down Method")
+                    });
+                    $("h4").mouseleave(function(){
+                            alert("This is an mouse leave Method")
+                    });
+                    $("h5").mouseout(function(){
+                            alert("This is an mouse out Method")
+                    });
+                    $("h6").mouseup(function(){
+                            alert("This is an mouse up Method")
+                    });
+                });
+            });
+            
+        </script>
+</head>
+<body>
+    <p>If you click me . I will disapper</p>
+    <p>Click me </p>
+    <p>Click me Also</p>
+    <h1>Heading 1 Double Click me i will Hide</h1>
+    <h1>Heading 2 me tooo</h1>
+    <h2>Mouse Enter</h2>
+    <h3>Mouse Down</h3>
+    <h4>Mouse Leave</h4>
+    <h5>Mouse out</h5>
+    <h6>Mouse Up</h6>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script>
+        function validate() {
+            var name = document.studentform.Username.value;
+            var pass = document.studentform.pass.value;
+            if(name == null || name == ""){
+                alert("Name should not be Empty");
+                return false;
+            }
+            else if(pass == "" || pass.length < 7){
+                alert("Password should be greater than 7 characters");
+                return false;
+                        
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- <h2>Insert any file </h2>
+    <DIV><input type="file" value="Upload file"></DIV> -->
+    <form name="studentform" onsubmit="validate()" action="/FSD/WEEK1/cse.html">
+      <div><input type="text" placeholder="Username" id="name" name="Username"></div>
+      <div><input type="password" placeholder="********" name="pass"></div>
+      <button>Submit</button>
+      </form>
+</body>
+
+<style>
+    
+   
+</style>
+</html>
